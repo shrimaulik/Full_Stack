@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Length</title>
+</head>
+<body>
+    <h1 id="in">fullstrack</h1>
+    <p id="output"></p>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+    <p id="g"></p>
+    <p id="h"></p>
+    <p id="i"></p>
+    <p id="j"></p>
+    <p id="k"></p>
+    <p id="l"></p>
+   
+    <script>
+        var a = document.getElementById("in").textContent;
+        document.getElementById("output").innerHTML = "String length: " + a.length;
+        document.getElementById("a").innerHTML = "char: " + a.charAt(2);
+        document.getElementById("b").innerHTML = "String slice: " + a.slice(0,4);
+        document.getElementById("c").innerHTML ="substring :"+a.substring(2);
+        document.getElementById("d").innerHTML ="sub str :"+a.substr(3);
+        document.getElementById("e").innerHTML ="upper case :" +a.toUpperCase();
+        document.getElementById("f").innerHTML ="lower case :" +a.toLowerCase();
+        var b="class";
+        document.getElementById("g").innerHTML ="concat :"+a.concat(b) ;
+        let text = "     programming!  ";
+        let result = text.trim();
+        document.getElementById("h").innerHTML = "trim <br>for example :"+text;
+        document.getElementById("i").innerHTML = " output :" +result;
+        let text2 = text.trimstart();
+        document.getElementById("j").innerHTML ="Length text1 = " + text.length + "<br>Length text2 = " + text2.length;
+        let text3 = text.trimEnd();
+        document.getElementById("k").innerHTML ="Length text1 = " + text.length + "<br>Length text2 = " + text3.length;
+    </script>
+</body>
+</html>

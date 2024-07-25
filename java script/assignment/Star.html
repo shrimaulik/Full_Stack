@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Star</title>
+        <script>
+            function calculate(){
+                var num=parseInt(document.getElementById("num").value);
+                for(var i=0;i<=num;i++){
+                    for(var j=0;j<=i;j++){
+                       //document.getElementById("res").innerHTML="* " ;
+                        document.write("* ");
+                    }
+                    //document.getElementById("res").innerHTML="<br> ";
+                    document.write("<br>  ");
+                }
+            }
+        </script>
+        <body>
+            <input id="num" type="text" placeholder="enter value">
+            <button onclick="calculate()">click</button>
+            <br><br>
+            <div id="res"></div>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Palindrome</title>
+        <script>
+            function calculate(){
+                var num=parseInt(document.getElementById("num").value);
+                var a=num.length -1;
+                var b=true;
+                for (let i = 0; i < a; i++){
+                    if(num[i]!=num[a]){
+                        b=false;
+                        break
+                    }
+                   
+                }
+                if(b){
+                document.getElementById("res").innerHTML ="the value is polindrome";
+                }
+                else{
+                    document.getElementById("res").innerHTML ="the value is Not polindrome";
+                }
+            }
+        </script>
+        <body>
+            <input id="num" type="text" placeholder="enter value">
+            <button onclick="calculate()">click</button>
+            <br><br>
+            <div id="res"></div>
+        </body>
+    </head>
+</html>

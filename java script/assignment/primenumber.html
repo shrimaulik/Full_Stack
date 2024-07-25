@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>prime</title>
+        <script>
+            function calculate(){
+                var num=parseInt(document.getElementById("num").value);
+               
+                var b=true;
+            for (let i = 2; i < number; i++){ 
+                if(num % i==0){
+                    b=true;
+                    break;
+                }
+                else{
+                    a=false;
+                }
+                       }
+                       if(b){
+                        document.getElementById("res").innerHTML=b;
+                       }
+                       else{
+                        document.getElementById("res").innerHTML=a;
+                       }
+
+                }
+
+        </script>
+        <body>
+            <input id="num" type="text" placeholder="enter value">
+            <button onclick="calculate()">click</button>
+            <br><br>
+            <div id="res"></div>
+        </body>
+    </head>
+</html>

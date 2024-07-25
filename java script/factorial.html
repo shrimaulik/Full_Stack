@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            factorial
+        </title>
+        <script>
+            function calcute(){
+                var num=parseInt(document.getElementById("num").value)
+                var result=1;
+                for(var i=1;i <=num;i++){
+                    result = result *i;
+                }
+                document.getElementById("res").innerHTML ="factorial : "+result;
+            }
+        </script>
+        <body>
+            <input id="num" type="text" placeholder="enter value"
+onfocus="this.value='' " onblur="calcute();">
+            <div id="res"></div>
+        </body>
+        
+    </head>
+</html>

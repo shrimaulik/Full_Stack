@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>class&obj</title>
+        <body>
+            <script>
+                // var student={ name : "vetri",age :"21" , studies : "information technology"};
+              
+                // document.write("<br>student Name :" +student.name);
+                // document.write("<br>student age :" +student.age);
+                // document.write("<br>student studies :" +student.studies);
+
+                // var student=new Object();
+                // student.name="vetri",student.age=21,student.studies="information technology";
+                // document.write("<br>student Name :" +student.name);
+                // document.write("<br>student age :" +student.age);
+                // document.write("<br>student studies :" +student.studies);
+
+                class student{
+
+                    constructor(name,age,studies){
+                        this.name=name;
+                        this.age=age;
+                        this.studies=studies;
+                    }
+                    dispaly(){
+                        document.write("<br>student name :"+this.name);
+                        document.write("<br>student age :"+this.age);
+
+                        document.write("<br>student studies :"+this.studies);
+
+                    }
+                }
+                var student1=new student("raja",21,"cse");
+                student1.dispaly();
+                var student2=new student("rani",20,"csbs");
+                student2.dispaly();
+
+
+            </script>
+        </body>
+    </head>
+</html>

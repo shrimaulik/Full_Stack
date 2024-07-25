@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>arro function</title>
+        <body>
+            <script>
+                const sum =() => 10 + 20;
+                document.write("<br>Addition :" +sum());
+                const sub =(x,y) =>x-y;
+                document.write("<br>subraction :" +sub(10,20));
+                const mul=(x,y) =>x*y;
+                document.write("<br>multiple :"+mul(10,20));
+                const div=(x,y) => x/y;
+                document.write("<br>divide :"+div(10,20));
+                const big=(x,y) =>{
+                    if(x>y)
+                    return x;
+                else 
+                return y;
+                }
+                document.write("<br>big value :"+big(10,20));
+                const factorial = (x) =>{
+                    var total=1;
+                    for(var i=1;i <=x;i++){
+                   total*=i;
+                }
+                return total;
+                }
+                document.write("<br factorial :" +factorial(4))
+            </script>
+        </body>
+    </head>
+</html>

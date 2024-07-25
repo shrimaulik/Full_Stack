@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>array </title>
+            <script>
+                function myfunction(){
+                    let skill=new Array(new Array("C","C++","Java"),new Array("sql","angule"));
+                    document.write("<br>Array Element :"+skill);
+                    document.write("<br>Array size :"+skill.length);
+                    document.write("<br>First Element :"+skill[0]);
+                    document.write("<br>list Element :"+skill[skill.length-1]);
+                    skill.push("python");
+                    document.write("<br>Array Element :"+skill);
+                    skill.pop();
+                    document.write("<br>Array Element :"+skill);
+                    document.write("<br>Array Element :");
+                    for(var i=0;i<skill.length;i++){
+                        document.write("<br>"+skill[i]);
+                    }
+
+
+                }
+            </script>
+            <body onload="myfunction()">
+
+            </body>
+       
+    </head>
+</html>
