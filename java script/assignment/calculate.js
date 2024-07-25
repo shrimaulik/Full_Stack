@@ -1,24 +1,24 @@
 function num(value){
    
-    document.getElementById("result").value+=value;
+    document.getElementById("result").innerHTML=value;
      
 }
 function clear() {
-    document.getElementById('result').value = '';
+    document.getElementById('result').innerHTML = '';
 }
 
 function back() {
     let currentValue = document.getElementById('result').value;
-    document.getElementById('result').value = currentValue.slice(0, -1);
+    document.getElementById('result').innerHTML = currentValue.slice(0, -1);
 }
 function eqal() {
-    let expression = document.getElementById('result').value;
+    let expression = document.getElementById('result').innerHTML;
     if (expression) {
         try {
             let result = eval(expression);
-            document.getElementById('result').value = result;
+            document.getElementById('result').innerHTML = result;
         } catch (error) {
-            document.getElementById('result').value = 'Error';
+            document.getElementById('result').innerHTML = 'Error';
         }
     }
 }
